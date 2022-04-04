@@ -1,9 +1,9 @@
 var professor = {
     id: 5,
-    nome: "BRFREITAS",
+    nome: "",
     turno: "manha",
     tipoAcesso: "restrito",
-    senha: "0205"  
+    senha: ""  
 };
 
 
