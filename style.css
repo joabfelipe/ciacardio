@@ -1,20 +1,19 @@
 body{
     background: #BD0A2E;
 }
-h1,div{
-    text-align: center;
-    color:ghostwhite ;
-    font-family: verdana;
+h1 {
+                color:#F8F8FF;
+                background: #BD0A2E;
+                font-family: verdana;
+                text-align: center;
+            }
+div{
+                text-align: center;
+                color:white ;
+                font-family: verdana;
 
+            }
+label, input{
+                text-align: center;
+                font-family: verdana;
 }
-h2{
-    text-align: center;
-    color:#BD0A2E ;
-    background: white;
-}
-a{
-    text-decoration: none;
-    color: white;
-
-}
-
