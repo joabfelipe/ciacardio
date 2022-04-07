@@ -1,20 +1,44 @@
 body{
     background: #BD0A2E;
+    font-size: 1em;
+    justify-content: center;
 }
 h1,div{
     text-align: center;
     color:ghostwhite ;
-    font-family: verdana;
+    font-family: sans-serif;
 
 }
 h2{
     text-align: center;
     color:#BD0A2E ;
     background: white;
+    font-family: sans-serif;
 }
 a{
     text-decoration: none;
     color: white;
+    font-family: sans-serif;
 
 }
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #BD0A2E;
+    color: #BD0A2E;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+fieldset{
+    border: 0;
+}
+#grupo{
+    font-family: sans-serif;
+}
 
+input, select, button{
+        border-radius: 5px;
+    
+  }
