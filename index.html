@@ -3,10 +3,11 @@
   <head>
     <title>Treinos Cardio</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
   </head>
   <body>
     <h1>Treinos Cardio</h1>
+    <script>const hoje = new Date( ); </script>
     <div>
       <h2>Treinos Prontos</h2>
       <ul type='none'>
@@ -21,16 +22,60 @@
 
     <div>
       <h2>Treinos Personalizados</h2>
-      <label>Aluno:</label>
-      <input type="text" name="nome"/>
-      <label>Idade:</label>
-      <input type="number" name="idade"/>
-      <label>Nível:</label>
-        <select name='Nível'>
-          <option value='Iniciante'>Iniciante</option>
-          <option value='Intermediário'>Intermediário</option>
-          <option value='Avançado'>Avançado</option>
+     <fieldset class="grupo">
+       <form>
+        <div>
+          <label for="nomeProf">Professor:</label>
+          <input type="text" placeholder="Digite o nome do professor" name="prof" id='nomeProf'required />
+        </div>
+        <div>  
+          <label for="nomeAluno">Aluno:</label>
+          <input type="text" placeholder="Digite o nome do aluno" name="nome" id="nomeAluno" required />
+        </div>
+        <div>
+          <label for="idadeAluno">Idade:</label>
+          <input type="number" placeholder="Idade do aluno" id="idadeAluno" required name="idade"/>
+        </div>
+        <div>
+        <label>Nível:</label>
+          <select name='Nível'>
+            <option value='Iniciante'>Iniciante</option>
+            <option value='Intermediário'>Intermediário</option>
+            <option value='Avançado'>Avançado</option>
+          </select>
+        </div>
+        <div>
+          <label></br></br>Data de realização do teste</label>
+          <input type="date" name="data"/>
+        </div>
+        <div>
+          <label>Data de finalização do teste</label>
+          <input type="date" name="data"/>
+        </div>
+        <div>
+        <label>Objetivo:</label>
+          <select name="Objetivo">
+            <option value='Emagrecimento'>Emagrecimento</option>
+            <option value='CondicionamentoF'>Condicionamento Físico</option>
+            <option value='Performance'>Performance</option>
+            <option value='10k'>10K</option>
+            <option value='21k'>21K</option>
+            <option value='Maratona'>Maratona</option>
+          </select>
+        </div>
+          <button type="submit" id="botao">Processar</button>
+      </form>
+
+     </fieldset>
+      
+      
+
+
+
+        <footer>
+          <img src="img/cia-athletica.png">
+        </footer>
+
   </body>
 </html>
-
 
