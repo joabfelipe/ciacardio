@@ -8,7 +8,7 @@
   <body>
     <h1>Treinos Cardio</h1>
     <script>const hoje = new Date( ); </script>
-    <div>
+    <div class='treinosProntos'>
       <h2>Treinos Prontos</h2>
       <ul type='none'>
           <li><a href="treinosProntos/treinopr1.html">⇨ Sessão de velocidade 3-2-1  ⇦</a></li>
@@ -24,48 +24,61 @@
       <h2>Treinos Personalizados</h2>
      <fieldset class="grupo">
        <form>
-        <div>
-          <label for="nomeProf">Professor:</label>
-          <input type="text" placeholder="Digite o nome do professor" name="prof" id='nomeProf'required />
+        <div class="campo">
+          <label>Professor:</label>
+          <input type="text" placeholder="Professor" name="prof" id='nomeProf'required />
         </div>
-        <div>  
-          <label for="nomeAluno">Aluno:</label>
-          <input type="text" placeholder="Digite o nome do aluno" name="nome" id="nomeAluno" required />
+        <div class="campo">  
+          
+          <input type="text" placeholder="Aluno" name="nome" id="nomeAluno" required />
         </div>
-        <div>
-          <label for="idadeAluno">Idade:</label>
-          <input type="number" placeholder="Idade do aluno" id="idadeAluno" required name="idade"/>
+        <div class="campo">
+          
+          <input type="number" placeholder="Idade" id="idadeAluno" required name="idade"/>
         </div>
-        <div>
-        <label>Nível:</label>
+        <div class="campo">
+        
           <select name='Nível'>
-            <option value='Iniciante'>Iniciante</option>
-            <option value='Intermediário'>Intermediário</option>
-            <option value='Avançado'>Avançado</option>
+            <option value='Iniciante' name="iniciante">Iniciante</option>
+            <option value='Intermediário' name="intermediario">Intermediário</option>
+            <option value='Avançado' name='avancado'>Avançado</option>
           </select>
         </div>
-        <div>
-          <label></br></br>Data de realização do teste</label>
-          <input type="date" name="data"/>
+        <div class="campo">
+          
+          <input type="date" name="dataRTeste"/>
         </div>
-        <div>
-          <label>Data de finalização do teste</label>
-          <input type="date" name="data"/>
+        <div class="campo">
+          
+          <input type="date" name="dataFteste"/>
         </div>
-        <div>
-        <label>Objetivo:</label>
-          <select name="Objetivo">
-            <option value='Emagrecimento'>Emagrecimento</option>
-            <option value='CondicionamentoF'>Condicionamento Físico</option>
-            <option value='Performance'>Performance</option>
-            <option value='10k'>10K</option>
-            <option value='21k'>21K</option>
-            <option value='Maratona'>Maratona</option>
+        <div class="campo">
+        
+          <select name="objetivoAluno">
+            <option value='Emagrecimento' name='emagrecimento'>Emagrecimento</option>
+            <option value='CondicionamentoF' name='condicionamento'>Condicionamento Físico</option>
+            <option value='Performance' name='performance'>Performance</option>
+            <option value='10k' name="10k">10K</option>
+            <option value='21k' name="21k">21K</option>
+            <option value='Maratona' name='maratona'>Maratona</option>
           </select>
         </div>
           <button type="submit" id="botao">Processar</button>
       </form>
 
+     </fieldset>
+
+     <fieldset>
+        <form>
+          <div class="testeStyle">
+            <label for="testeStyle">teste</label>
+            <input type="text" placeholder="digite o teste" name="teste">
+          </div>
+          <div class="testeStyle">
+            <label for="proparoxitona">proparoxitona</label>
+            <input type="text" placeholder="digite o tesafeate" name="proparoxitona">
+          </div>        
+        </form>
      </fieldset>
       
       

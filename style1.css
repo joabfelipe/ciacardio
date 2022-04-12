@@ -3,7 +3,7 @@ body{
     font-size: 1em;
     justify-content: center;
 }
-h1,div{
+h1, div{
     text-align: center;
     color:ghostwhite ;
     font-family: sans-serif;
@@ -33,12 +33,47 @@ footer {
 }
 fieldset{
     border: 0;
-}
-#grupo{
-    font-family: sans-serif;
+
 }
 
-input, select, button{
-        border-radius: 5px;
-    
-  }
+
+form input[type=text] ,
+
+form input[type=number]{
+    width: 20%;
+    height: 20px;
+    border: 1px solid #ccc;
+    padding-left: 10px;  
+    justify-content: center;
+}
+form input[type=date]{
+    width: 20.2%;
+    height: 20px;
+    border: 1px solid #ccc;
+    padding-left: 10px;  
+    justify-content: center;
+}
+select{
+    width: 20.99%;
+    height: 20px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+}
+
+.testeStyle{
+   margin-bottom: 0.2em;
+   color: skyblue;
+   display: block;  
+}
+
+fieldset.testeStyle{
+  
+    margin-right: 1em;
+}
+
+.testeStyle input[type="text"], .testeStyle label{
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
